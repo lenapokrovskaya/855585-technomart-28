@@ -31,13 +31,15 @@
  --greylight: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
  --special-extra-greylight: #F3F7F9;
  --special-super-greylight: #E5E5E5;
+ --font-cuprum: "Cuprum", "Arial", sans-serif;
+ --font-pt-sans: "PT Sans","Arial", sans-serif;
 }
 
 body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: var(--font-cuprum)
 }
 
 a {
@@ -56,11 +58,12 @@ img {
   background-color: var(--basic-background);
 }
 
-.logo-header {
+.logo {
   background-color: var(--basic-red);
 }
 
-.logo-header:focus {
+.logo:active,
+.logo:focus {
   background-color: var(--basic-dark-red);
 }
 
@@ -68,15 +71,11 @@ img {
   background-color: var(--basic-dark-grey);
 }
 
-.header-down {
-
-}
-
-
 .user-navigation {
   background-color: var(--basic-dark-grey);
 }
 
+.user-navigation a:active,
 .user-navigation a:focus {
   background-color: #161D29;
   color: rgba(255, 255, 255, 0.5);
@@ -95,6 +94,12 @@ img {
   outline: none;
 }
 
+.search-form input::placeholder {
+  font: inherit;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: none;
+}
 .order {
   background-color: var(--basic-green);
 }
@@ -103,8 +108,13 @@ img {
   background-color: var(--special-green);
 }
 
-.order a:focus {
-    background-color: var(--basic-green);
+.user-navigation .order:active,
+.user-navigation .order:focus {
+  background-color: var(--basic-green);
+}
+
+.basket {
+  background-color: var(--basic-red);
 }
 
 .main-navigation {
@@ -124,6 +134,11 @@ img {
   background-color: var(--basic-dark-grey);
 }
 
+.site-navigation a:not([href]):hover {
+  background-color: inherit;
+}
+
+.site-navigation a:active,
 .site-navigation a:focus {
   background-color: #1D2739;
   opacity: 0.5;
@@ -136,7 +151,7 @@ img {
   color: var(--basic-red);
 }
 
-.tel a {
+.tel-link {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -151,20 +166,23 @@ img {
   color: var(--basic-grey);
 }
 
-.login a,
-.registration a {
+.login,
+.registration {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
-.login a:hover,
-.registration a:hover {
+.login:hover,
+.registration:hover {
   color: var(--basic-red);
 }
 
-.login a:focus {
+.login:active,
+.registration:active,
+.login:focus,
+.registration:focus {
   color: var(--basic-extra-greylight);
 }
 
@@ -200,14 +218,6 @@ img {
   line-height: 24px;
   background-color: var(--basic-grey);
 }
-/*пропадает, когда перекрывается фоном footer-up* или main-footer*/
-.footer-logo {
-  background-color: var(--basic-red);
-}
-
-.footer-logo:focus {
-  background-color: var(--basic-dark-red);
-}
 
 .footer-up  {
   font-size: 18px;
@@ -219,6 +229,7 @@ img {
   font-size: 16px;
   line-height: 18px;
 }
+
 .footer-site-navigation,
 .footer-catalog-navigation,
 .social {
@@ -231,6 +242,18 @@ color: var(--basic-background);
 
 .footer-catalog-navigation a {
 color: var(--special-yellowlight);
+}
+
+.footer-site-navigation a:hover,
+.footer-catalog-navigation a:hover {
+text-decoration: underline;
+}
+
+.footer-site-navigation a:active,
+.footer-catalog-navigation a:active,
+.footer-site-navigation a:focus,
+.footer-catalog-navigation a:focus {
+  opacity: 0.5;
 }
 
 .footer-address {
@@ -253,73 +276,88 @@ color: var(--basic-white);
   color: var(--special-yellowlight);
 }
 
+.feedback a:hover,
+.developed a:hover {
+  text-decoration: underline;
+}
 
-.user a {
+.feedback a:active,
+.developed a:active,
+.feedback a:focus,
+.developed a:focus  {
+  color: var(--basic-red);
+  text-decoration:none;
+}
+
+.user {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
-.my-orders a,
-.personal-account a {
+.my-orders,
+.personal-account {
 
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
 }
 
-.my-orders a:hover,
-.personal-account a:hover {
+.my-orders:hover,
+.personal-account:hover {
   color: var(--basic-red);
 }
 
-.user a:focus,
-.my-orders a:focus,
-.personal-account a:focus {
+.user:active,
+.my-orders:active,
+.personal-account:active,
+.user:focus,
+.my-orders:focus,
+.personal-account:focus {
   color: var(--basic-greylight);
 }
 
 .breadcrumbs a {
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: var(--font-pt-sans);
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
-.perforators-title {
+.product-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-grey);
   background-color: var(--basic-background);
-
 }
 
-legend {
-  font-family: "PT Sans","Arial",sans-serif;
+.radio-filter-title,
+.checkbox-filter-title {
+  font-family: var(--font-pt-sans);
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.company-filter,
-.supply-filter {
-  font-family: "PT Sans","Arial",sans-serif;
+.radio-filter,
+.checkbox-filter {
+  font-family: var(--font-pt-sans);
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
-
 }
-.company-filter ul,
-.supply-filter ul {
+
+.radio-filter ul,
+.checkbox-filter ul {
   list-style: none;
 }
 
-.button-show {
+.button-submit-filter {
   font: inherit;
   font-size: 13px;
   line-height: 18px
@@ -332,15 +370,15 @@ legend {
   outline: none;
 }
 
-.perforator-title {
-  font-family: "PT Sans","Arial",sans-serif;
+.product-name-title {
+  font-family: var(--font-pt-sans);
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
 
 .old-price {
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: var(--font-pt-sans);
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -349,7 +387,7 @@ legend {
 }
 
 .price {
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: var(--font-pt-sans);
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -358,6 +396,6 @@ legend {
   background-color: var(--basic-red);
 }
 
-.perforators-list ul {
+.product-list ul {
   list-style: none;
 }
