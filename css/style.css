@@ -23,6 +23,7 @@
  --basic-white: #FFFFFF;
 
  --special-yellow: #FFBF47;
+ --special-similar-yellow: #FFC047;
  --special-blue: #3BBCE3;
  --special-lilac: #DC91D8;
  --special-greenlight: #8ED78F;
@@ -186,7 +187,133 @@ img {
 .registration:focus {
   color: var(--basic-extra-greylight);
 }
+/*красная зона - вторая часть задания раздела Введение в CSS" №9. Завершаем базовую стилизацию*/
+.categories-items {
+  color: var(--basic-white);
+}
+.category-item:first-child {
+  background-color: var(--special-yellow);
+}
 
+.category-item:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.category-item:nth-child(3) {
+  background-color: var(--special-lilac);
+}
+
+.category-item:nth-last-child(2) {
+  background-color: var(--special-greenlight);
+}
+
+.category-item:last-child {
+  background-color: var(--special-similar-yellow);
+}
+
+.category-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.category-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.btn-more {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+.section-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: var(--basic-neutral);
+  color: var(--basic-grey);
+}
+
+.btn-all {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+.services-section {
+  background-color: var(--basic-background);
+}
+.services-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-description {
+  font-family: var(--font-pt-sans);
+  font-size: 13px;
+  line-height: 24px;
+}
+.service-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-grey);
+}
+.btn-submit-request {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.pagination {
+  font-family: var(--font-pt-sans);
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pagination a {
+  color: var(--basic-black);
+}
+
+.current {
+  background-color: var(--basic-red);
+}
+
+.catalog-info {
+  background-color: var(--basic-background);
+}
+.catalog-info-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-info-description {
+  font-family: var(--font-pt-sans);
+  font-size: 13px;
+  line-height: 24px;
+}
+
+/*красная зона*/
 .info p {
   font-family: PT Sans;
   font-size: 13px;
