@@ -71,12 +71,10 @@ img {
   background-color: var(--basic-dark-grey);
 }
 
-.user-navigation {
-  background-color: var(--basic-dark-grey);
-}
-
-.user-navigation a:active,
-.user-navigation a:focus {
+.bookmarks-link:active,
+.bookmarks-link:focus,
+.basket-link:focus,
+.basket-link:active {
   background-color: #161D29;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -102,15 +100,17 @@ img {
 }
 .order {
   background-color: var(--basic-green);
+  color: var(--basic-white);
 }
 
 .order:hover {
   background-color: var(--special-green);
 }
 
-.user-navigation .order:active,
-.user-navigation .order:focus {
+.order:active,
+.order:focus {
   background-color: var(--basic-green);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .basket {
@@ -126,7 +126,8 @@ img {
 }
 
 .site-navigation a,
-.user-navigation a {
+.bookmarks-link,
+.basket-link {
   color: var(--basic-white);
 }
 
@@ -236,24 +237,25 @@ img {
   list-style: none;
 }
 
-.footer-site-navigation a {
+.footer-nav-link {
 color: var(--basic-background);
 }
 
-.footer-catalog-navigation a {
+.footer-catalog-nav-link {
 color: var(--special-yellowlight);
 }
 
-.footer-site-navigation a:hover,
-.footer-catalog-navigation a:hover {
+.footer-nav-link:hover,
+.footer-catalog-nav-link:hover {
 text-decoration: underline;
 }
 
-.footer-site-navigation a:active,
-.footer-catalog-navigation a:active,
-.footer-site-navigation a:focus,
-.footer-catalog-navigation a:focus {
+.footer-nav-link:active,
+.footer-catalog-nav-link:active,
+.footer-nav-link:focus,
+.footer-catalog-nav-link:focus {
   opacity: 0.5;
+  text-decoration:none;
 }
 
 .footer-address {
@@ -271,20 +273,20 @@ color: var(--basic-white);
   color: var(--basic-white);
 }
 
-.feedback a,
-.developed a {
+.feedback-link,
+.developed-link {
   color: var(--special-yellowlight);
 }
 
-.feedback a:hover,
-.developed a:hover {
+.feedback-link:hover,
+.developed-link:hover {
   text-decoration: underline;
 }
 
-.feedback a:active,
-.developed a:active,
-.feedback a:focus,
-.developed a:focus  {
+.feedback-link:active,
+.feedback-link:focus,
+.developed-link:active,
+.developed-link:focus  {
   color: var(--basic-red);
   text-decoration:none;
 }
@@ -310,10 +312,10 @@ color: var(--basic-white);
 }
 
 .user:active,
-.my-orders:active,
-.personal-account:active,
 .user:focus,
+.my-orders:active,
 .my-orders:focus,
+.personal-account:active,
 .personal-account:focus {
   color: var(--basic-greylight);
 }
