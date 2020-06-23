@@ -18,8 +18,9 @@
 
           <div class="search">
             <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
+              <button class="btn-search" type="submit"><span class="visually-hidden"</span>Поиск</button>
               <input name="search" inputmode="search" type="text" placeholder="Поиск:">
-              <button class="visually-hidden" type="submit">Поиск</button>
+
             </form>
           </div>
           <a class="bookmarks-link" href="">Закладки: 0</a>
@@ -39,7 +40,10 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
       </div>
-        <a class="login" href="">Войти</a>
+        <a class="login" href=""><span class="login-icon"><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+          <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
+        </svg></span>Войти</a>
         <a class="registration" href="">Регистрация</a>
         </div>
         <nav class="main-navigation">
@@ -61,34 +65,45 @@
       <section class="categories-items">
         <article class="category-item">
           <h2 class="category-title">Материалы</h2>
-          <img src="https://via.placeholder.com/" width="44" height="65" alt="Материалы">
+          <img src="img/icon-materials.svg" width="44" height="65" alt="Материалы">
           <span>Новинка</span>
           <a class="category-description" href="">На любой вкус</a>
         </article>
         <article class="category-item">
           <h2 class="category-title">Инструмент</h2>
-          <img src="https://via.placeholder.com/" width="75" height="61" alt="Инструмент">
+          <img src="img/icon-tool.svg" width="75" height="61" alt="Инструмент">
           <a class="category-description" href="">На все случаи жизни</a>
         </article>
         <article class="category-item">
           <h2 class="category-title">Техника</h2>
-          <img src="https://via.placeholder.com/" width="78" height="62" alt="Техника">
+          <img src="img/icon-equipment.svg" width="78" height="62" alt="Техника">
           <a class="category-description" href="">Для стройки</a>
         </article>
+        <div class="slider-image">
         <article class="slider">
+          <ul class="slider-list">
+            <li class="slider-item slide">
           <h2 class="slider-title">Перфораторы</h2>
-          <img class="slider-img" src="img/drills.jpg" width="620" height="266" alt="Дрели">
           <p class="slider-description">Настоящие мужские игрушки</p>
           <a class="btn btn-more" href="catalog.html">Открыть каталог</a>
-        </article>
+        </li>
+        <li class="slider-item slide">
+      <h2 class="slider-title">Дрели</h2>
+      <p class="slider-description">Соседям на радость!</p>
+      <a class="btn btn-more" href="catalog.html">Открыть каталог</a>
+      </li>
+    </ul>
+
+  </article>
+</div>
         <article class="category-item">
           <h2 class="category-title">Скидка 50%</h2>
-          <img src="https://via.placeholder.com/" width="59" height="72" alt="Скидка 50%">
+          <img src="img/icon-sales.svg" width="59" height="72" alt="Скидка 50%">
           <a class="category-description" href="">На 350 товаров</a>
         </article>
         <article class="category-item">
           <h2 class="category-title">Доставка</h2>
-          <img src="https://via.placeholder.com/" width="78" height="63" alt="Доставка">
+          <img src="img/icon-delivery.svg" width="78" height="63" alt="Доставка">
           <a class="category-description" href="">Бесплатно</a>
         </article>
       </section>
@@ -267,7 +282,7 @@
             Настоящий мужской шоппинг начинается здесь!
             Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
-          <p class="info-section-description">
+          <p class="info-section-description info-section-paragraph">
             Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
@@ -280,7 +295,7 @@
         </section>
         <section class="info-column-contacts">
           <h2 class="info-section-title">Контакты</h2>
-          <p>
+          <p class="info-section-description">
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
@@ -331,9 +346,21 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social">
-            <li><a href="">Вконтакте</a></li>
-            <li><a href="">Фейсбук</a></li>
-            <li><a href="">Инстаграм</a></li>
+            <li><a class="social-btn social-vk" href=""><span class="visually-hidden">Вконтакте</span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+            </svg>
+
+</a></li>
+            <li><a class="social-btn social-fb" href=""><span class="visually-hidden">Фейсбук</span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+            </svg>
+
+</a></li>
+            <li><a class="social-btn social-ig" href=""><span class="visually-hidden">Инстаграм</span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+            </svg>
+
+</a></li>
           </ul>
         </section>
         <div class="feedback-section">
@@ -350,26 +377,32 @@
 </div>
     </footer>
     <section class="modal">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+      <div class="modal-form-wrapper">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-item-name">
           <label for="your-name">Ваше имя:</label>
           <input id="your-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
-        <p>
+        <p class="modal-item-mail">
           <label for="your-mail">Ваш e-mail:</label>
           <input id="your-mail" type="email" name="mail" placeholder="email@example.com" required>
         </p>
-        <p>
+        <p class="modal-item-text">
           <label for="text-letter">Текст письма:</label>
           <textarea id="text-letter" name="text" rows="" cols=""  placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Оформить заказ</button>
+        <div class="btn-area">
+        <button class="btn btn-submit-modal" type="submit">Отправить</button>
+      </div>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="close-item close-item-modal" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div>
     </section>
     <section class="popup-map">
-      <img src="img/map-popup.png" width="943" height="449" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <button type="button">Закрыть</button>
+      <div class="popup-map-wrapper">
+      <img class="img-map" src="img/map-popup.png" width="943" height="449" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <button class="close-item close-item-map" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
     </section>
   </body>
 </html>

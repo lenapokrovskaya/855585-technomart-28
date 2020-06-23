@@ -15,12 +15,14 @@
           <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
         </a>
 
-          <div class="search">
-            <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
-            <input name="search" inputmode="search" type="text" placeholder="Поиск:">
-              <button class="visually-hidden" type="submit">Поиск</button>
-            </form>
-          </div>
+
+                  <div class="search">
+                    <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
+                      <button class="btn-search" type="submit"><span class="visually-hidden"</span>Поиск</button>
+                      <input name="search" inputmode="search" type="text" placeholder="Поиск:">
+
+                    </form>
+                  </div>
           <a class="bookmarks-link" href="">Закладки: 0</a>
           <a class= "basket-link basket" href="">Корзина: 10</a>
           <a class="order" href="">Оформить заказ</a>
@@ -39,10 +41,18 @@
         </p>
       </div>
       <div class="user-nav">
-        <a class="user" href="">Равшан Джамшутович</a>
-        <a class="logout visually-hidden" href="">Выход</a>
+        <div class="user-items">
+        <a class="user"href=""><span class="user-icon"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
+        </svg></span>Равшан Джамшутович</a>
+        <a class="logout" href=""><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+  <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
+</svg><span class="visually-hidden">Выход</span></a>
+</div>
         <div class="user-links">
         <a class="my-orders" href="">Мои заказы</a>
+        <span class="point"></span>
         <a class="personal-account" href="">Личный кабинет</a>
       </div>
       </div>
@@ -63,7 +73,7 @@
     <div class="page-catalog container">
       <h1 class="visually-hidden">Каталог интернет-магазина "Техномарт"</h1>
       <div class="breadcrumbs">
-      <a class="breadcrumbs-links" href="index.html">Главная</a>
+      <a class="breadcrumbs-links" href="index.html"><span class="visually-hidden">Главная</span></a>
       <a class="breadcrumbs-links" href="">Каталог</a>
       <a class="breadcrumbs-links" href="">Инструмент</a>
       <a class="breadcrumbs-links">Перфораторы</a>
@@ -120,7 +130,7 @@
         <h2 class="visually-hidden">Список перфораторов</h2>
         <ul class="product-list-catalog-grid">
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </p>
@@ -134,7 +144,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </p>
@@ -148,7 +158,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 <span>Новинка</span>
@@ -163,7 +173,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                 <span>Новинка</span>
@@ -178,7 +188,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </p>
@@ -192,7 +202,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                 <span>Новинка</span>
@@ -204,7 +214,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                 <span>Новинка</span>
@@ -219,7 +229,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </p>
@@ -233,7 +243,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="product-cards">
               <p>
                 <img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                 <span>Новинка</span>
@@ -313,9 +323,21 @@
   <section class="footer-social">
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="social">
-      <li><a href="">Вконтакте</a></li>
-      <li><a href="">Фейсбук</a></li>
-      <li><a href="">Инстаграм</a></li>
+      <li><a class="social-btn social-vk" href=""><span class="visually-hidden">Вконтакте</span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+      </svg>
+
+</a></li>
+      <li><a class="social-btn social-fb" href=""><span class="visually-hidden">Фейсбук</span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+      </svg>
+
+</a></li>
+      <li><a class="social-btn social-ig" href=""><span class="visually-hidden">Инстаграм</span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+      </svg>
+
+</a></li>
     </ul>
   </section>
   <div class="feedback-section">
@@ -331,10 +353,15 @@
 </div>
 </div>
 </footer>
-    <section class="popup">
-      <span>Товар добавлен в корзину!</span>
-      <a href="">Оформить заказ</a>
-      <a href="">Продолжить Покупки</a>
+    <section class="popup-basket">
+      <div class="popup-basket-wrapper">
+      <p class="basket-title">Товар добавлен в корзину!</p>
+      <div class="btn-area">
+      <a class="btn btn-order" href="">Оформить заказ</a>
+      <a class="btn btn-continue" href="">Продолжить покупки</a>
+      <button class="close-item close-popup-basket" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
+    </div>
     <section>
   </body>
 </html>
