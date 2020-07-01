@@ -63,26 +63,26 @@
       <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
       <!-- Начало красной зоны (Задание № 3. Дополняем разметку, раздел № 2. Разметка) -->
       <section class="categories-items">
-        <article class="category-item">
+        <article class="category-item category-item-material">
           <h2 class="category-title">Материалы</h2>
-          <img src="img/icon-materials.svg" width="44" height="65" alt="Материалы">
-          <span>Новинка</span>
+          <img class="category-img-1" src="img/icon-materials.svg" width="44" height="65" alt="Материалы">
+          <span class="new"><span class="visually-hidden">Новинка</span></span>
           <a class="category-description" href="">На любой вкус</a>
         </article>
         <article class="category-item">
           <h2 class="category-title">Инструмент</h2>
-          <img src="img/icon-tool.svg" width="75" height="61" alt="Инструмент">
+          <img class="category-img-2" src="img/icon-tool.svg" width="75" height="61" alt="Инструмент">
           <a class="category-description" href="">На все случаи жизни</a>
         </article>
         <article class="category-item">
           <h2 class="category-title">Техника</h2>
-          <img src="img/icon-equipment.svg" width="78" height="62" alt="Техника">
+          <img class="category-img-3" src="img/icon-equipment.svg" width="78" height="62" alt="Техника">
           <a class="category-description" href="">Для стройки</a>
         </article>
-        <div class="slider-image">
+        <div class="slider-image slider-image-1">
         <article class="slider">
           <ul class="slider-list">
-            <li class="slider-item slide">
+            <li class="slider-item slide slide-current">
           <h2 class="slider-title">Перфораторы</h2>
           <p class="slider-description">Настоящие мужские игрушки</p>
           <a class="btn btn-more" href="catalog.html">Открыть каталог</a>
@@ -93,17 +93,20 @@
       <a class="btn btn-more" href="catalog.html">Открыть каталог</a>
       </li>
     </ul>
-
-  </article>
+    <div class="slider-controls">
+      <button class="btn-back" type="button" aria-label="Назад"></button>
+      <button class="btn-next" type="button" aria-label="Вперед"></button>
+    </div>
 </div>
+  </article>
         <article class="category-item">
           <h2 class="category-title">Скидка 50%</h2>
-          <img src="img/icon-sales.svg" width="59" height="72" alt="Скидка 50%">
+          <img class="category-img-4" src="img/icon-sales.svg" width="59" height="72" alt="Скидка 50%">
           <a class="category-description" href="">На 350 товаров</a>
         </article>
         <article class="category-item">
           <h2 class="category-title">Доставка</h2>
-          <img src="img/icon-delivery.svg" width="78" height="63" alt="Доставка">
+          <img class="category-img-5" src="img/icon-delivery.svg" width="78" height="63" alt="Доставка">
           <a class="category-description" href="">Бесплатно</a>
         </article>
       </section>
@@ -114,12 +117,12 @@
       </div>
         <ul class="product-list-grid">
           <li>
-            <article>
-              <p>
+            <article class="popular-products-cards">
+              <p class="img-popular-products">
                 <img src="img/bfg-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
               </p>
               <h3 class="product-name-title">Перфоратор BOSCH BFG 9000</h3>
-              <p>
+              <p class="old-price-container">
                 <del class="old-price">32500 Р.</del>
               </p>
               <a class="price" href="">25500 Р.</a>
@@ -128,13 +131,13 @@
             </article>
           </li>
           <li>
-            <article>
-              <p>
+            <article class="popular-products-cards">
+              <p class="img-popular-products">
                 <img src="img/bfg-3000.png" width="127" height="113" alt="Перфоратор BOSCH BFG 3000">
-                <span>Новинка</span>
+                <span class="new"><span class="visually-hidden">Новинка</span></span>
               </p>
               <h3 class="product-name-title">Перфоратор BOSCH BFG 3000</h3>
-              <p>
+              <p class="old-price-container">
                 <del class="old-price">22500 Р.</del>
               </p>
               <a class="price" href="">15500 Р.<a>
@@ -143,12 +146,12 @@
             </article>
           </li>
           <li>
-            <article>
-              <p>
+            <article class="popular-products-cards">
+              <p class="img-popular-products">
                 <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </p>
               <h3 class="product-name-title">Перфоратор BOSCH BFG 6000</h3>
-              <p>
+              <p class="old-price-container">
                 <del class="old-price">30500 Р.</del>
               </p>
               <a class="price" href="">25500 Р.<a>
@@ -157,12 +160,12 @@
             </article>
           </li>
           <li>
-            <article>
-              <p>
+            <article class="popular-products-cards">
+              <p class="img-popular-products">
                 <img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-                <span>Новинка</span>
+                <span class="new"><span class="visually-hidden">Новинка</span></span>
               </p>
-              <h3 class="product-name-title">Перфоратор BOSCH BFG 2000</h3>
+              <h3 class="product-name-title special-product-title">Перфоратор BOSCH BFG 2000</h3>
               <a class="price" href="">12500 Р.<a>
               <a href="">Купить</a>
               <a href="">В закладки</a>
@@ -177,7 +180,7 @@
       </div>
         <ul class="product-list-grid">
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">Bosch</span>
               <a href="">
                 <img src="img/logo-bosch.png" width="126" height="37" alt="Bosch">
@@ -185,7 +188,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">Makita</span>
               <a href="">
                 <img src="img/logo-makita.png" width="123" height="40" alt="Makita">
@@ -193,7 +196,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">Dewalt</span>
               <a href="">
                 <img src="img/logo-dewalt.png" width="146" height="44" alt="Dewalt">
@@ -201,7 +204,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">Интерскол</span>
               <a href="">
                 <img src="img/logo-interskol.png" width="200" height="88" alt="Интерскол">
@@ -209,7 +212,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">Hitachi</span>
               <a href="">
                 <img src="img/logo-hitachi.png" width="169" height="31" alt="Hitachi">
@@ -217,7 +220,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">LG</span>
               <a href="">
                 <img src="img/logo-lg.png" width="121" height="73" alt="LG">
@@ -225,7 +228,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">AEG</span>
               <a href="">
                 <img src="img/logo-aeg.png" width="151" height="96" alt="AEG">
@@ -233,7 +236,7 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-cards">
               <span class="visually-hidden">Metabo</span>
               <a href="">
                 <img src="img/logo-metabo.png" width="204" height="69" alt="Metabo">
@@ -250,29 +253,50 @@
           Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-<!-- Здесь будет форма -->
-        <span class="service-title">Доставка</span>
-        <p class="services-description">
-          Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-        </p>
-        <span class="service-title">Гарантия</span>
+        <div class="tab-frame">
+    <input type="radio" checked name="tab" id="tab1">
+    <label class="item1" for="tab1">Доставка</label>
+
+    <input type="radio" name="tab" id="tab2">
+    <label class="item2" for="tab2">Гарантия</label>
+
+    <input type="radio" name="tab" id="tab3">
+    <label class="item3" for="tab3">Кредит</label>
+
+    <div class="tab delivery">
+      <span class="service-title">Доставка</span>
+       <p class="services-description">
+         Мы с удовольствием доставим ваш товар прямо
+         к вашему подъезду совершенно бесплатно!
+         Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+       </p>
+    </div>
+
+    <div class="tab guarantee">
+      <span class="service-title">Гарантия</span>
         <p class="services-description">
           Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
         </p>
         <p class="services-description">
           Дом уж восстановите как-нибудь сами.
         </p>
-        <span class="service-title">Кредит</span>
+    </div>
+    <div class="tab credit">
+      <span class="service-title">Кредит</span>
         <p class="services-description">
           Залезть в долговую яму стало проще!
         </p>
         <p class="services-description">
           Кредитные консультанты придут вам на помощь.
         </p>
-        <a class="btn-submit-request" href="">Отправить заявку</a>
-      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+            </div>
+
       </section>
       <!-- Конец красной зоны -->
       <div class="info-section container">
@@ -376,7 +400,7 @@
       </div>
 </div>
     </footer>
-    <section class="modal">
+    <section class="modal modal-form-feedback">
       <div class="modal-form-wrapper">
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="modal-item-name">
@@ -398,9 +422,9 @@
       <button class="close-item close-item-modal" type="button"><span class="visually-hidden">Закрыть</span></button>
       <div>
     </section>
-    <section class="popup-map">
+    <section class="modal popup-map">
       <div class="popup-map-wrapper">
-      <img class="img-map" src="img/map-popup.png" width="943" height="449" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943px" height="449px" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <button class="close-item close-item-map" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
     </section>
