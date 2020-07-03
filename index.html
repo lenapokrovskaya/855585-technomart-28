@@ -59,10 +59,10 @@
         </nav>
     </header>
     <main>
-      <div class="container">
+      <div class="main-container container ">
       <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
       <!-- Начало красной зоны (Задание № 3. Дополняем разметку, раздел № 2. Разметка) -->
-      <section class="categories-items">
+      <section class="categories-items categories-item-container">
         <article class="category-item category-item-material">
           <h2 class="category-title">Материалы</h2>
           <img class="category-img-1" src="img/icon-materials.svg" width="44" height="65" alt="Материалы">
@@ -322,7 +322,9 @@
           <p class="info-section-description">
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
+          <a class="map-link">
           <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </a>
           <a class="btn btn-info-contacts" href="">Заблудились? Напишите нам!</a>
         </section>
       </div>
@@ -405,15 +407,15 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="modal-item-name">
           <label for="your-name">Ваше имя:</label>
-          <input id="your-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          <input class="modal-name" id="your-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p class="modal-item-mail">
           <label for="your-mail">Ваш e-mail:</label>
-          <input id="your-mail" type="email" name="mail" placeholder="email@example.com" required>
+          <input  class="modal-mail" id="your-mail" type="email" name="mail" placeholder="email@example.com" required>
         </p>
         <p class="modal-item-text">
           <label for="text-letter">Текст письма:</label>
-          <textarea id="text-letter" name="text" rows="" cols=""  placeholder="В свободной форме"></textarea>
+          <textarea class="modal-text" id="text-letter" name="text" rows="" cols=""  placeholder="В свободной форме"></textarea>
         </p>
         <div class="btn-area">
         <button class="btn btn-submit-modal" type="submit">Отправить</button>
@@ -422,11 +424,15 @@
       <button class="close-item close-item-modal" type="button"><span class="visually-hidden">Закрыть</span></button>
       <div>
     </section>
+
+    <script src="js/form.js"></script>
+
     <section class="modal popup-map">
       <div class="popup-map-wrapper">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943px" height="449px" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <button class="close-item close-item-map" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
     </section>
+    <script src="js/form.js"></script>
   </body>
 </html>
