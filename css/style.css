@@ -1647,7 +1647,7 @@ margin-bottom: 18px;
 .button-submit-filter {
   font-family: var(--font-pt-sans);
   font-size: 13px;
-  line-height: 18px
+  line-height: 18px;
   text-align: center;
   width: 220px;
   padding-top: 10px;
@@ -2329,6 +2329,7 @@ position: relative;
   width: 620px;
   min-height: 282px;
   position: relative;
+  background-color: var(--basic-white);
 }
 
 .popup-basket-wrapper::before {
