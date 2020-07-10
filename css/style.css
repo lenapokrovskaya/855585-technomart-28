@@ -1,3 +1,53 @@
+@font-face {
+  font-family: "cuprum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/cuprum.woff") format("woff"),
+  url("../fonts/cuprum.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "cuprumbold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/cuprumbold.woff") format("woff"),
+  url("../fonts/cuprumbold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "cuprumbolditalic";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/cuprumbolditalic.woff") format("woff"),
+  url("../fonts/cuprumbolditalic.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "cuprumitalic";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/cuprumitalic.woff") format("woff"),
+  url("../fonts/cuprumitalic.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "ptsans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ptsans.woff") format("woff"),
+  url("../fonts/ptsans.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "ptsansbold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff") format("woff"),
+  url("../fonts/ptsansbold.woff2") format('woff2');
+}
+
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -8,6 +58,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* Variables */
 :root {
  --basic-red: #EE3643;
@@ -38,8 +89,8 @@
  --special-super-greylight: #E5E5E5;
  --special-neutral:  #F4F4F4;
  --special-beige: #F7F3EC;
- --font-cuprum: "Cuprum", "Arial", sans-serif;
- --font-pt-sans: "PT Sans","Arial", sans-serif;
+ --font-cuprum: "cuprum", "Arial", sans-serif;
+ --font-pt-sans: "ptsans","Arial", sans-serif;
 }
 
 *, *::before, *::after {
@@ -452,6 +503,8 @@ img {
 .user-links {
   display: flex;
   align-self: flex-start;
+  justify-content: space-between;
+  position: relative;
   min-width: 210px;
   margin-left: 44px;
   margin-top: 7px;
@@ -462,24 +515,23 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
-
 }
+
+.my-orders::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 7px;
+  left: 90px;
+  background-color: var(--basic-grey);
+  border-radius: 50px;
+  }
 
 .my-orders:hover,
 .personal-account:hover,
 .user:hover {
   color: var(--basic-red);
-}
-
-.point {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin-left: 15px;
-  margin-right: 14px;
-  margin-top: 7px;
-  background-color: var(--basic-grey);
-  border-radius: 50px;
 }
 
 .user:active,
@@ -659,7 +711,9 @@ background-color: var(--basic-dark-red);
 .slider {
   position: relative;
   grid-column: 1 / 3;
-  grid-row: 1 / 2;
+  grid-row: 2 / 2;
+  width: 620px;
+  height: 266px;
 }
 
 .slide {
@@ -668,19 +722,6 @@ background-color: var(--basic-dark-red);
 
 .slide-current {
   display: block;
-}
-
-.slider-image {
-  min-width: 620px;
-  min-height: 266px;
-  background-repeat: no-repeat;
-}
-
-.slider-image-1 {
-  background-image: url("../img/perforators.jpg");
-}
-.slider-image-2 {
-  background-image: url("../img/drills.jpg");
 }
 
 .slider-list {
@@ -742,13 +783,12 @@ background-color: var(--basic-dark-red);
   position: absolute;
   bottom: 8px;
   left: 295px;
-
   display: flex;
   width: 30px;
   justify-content: space-between;
 }
 
-.slider-toggles button {
+.slider-toggles .slider-toggle {
   padding: 0;
   width: 10px;
   height: 10px;
@@ -758,7 +798,7 @@ background-color: var(--basic-dark-red);
   cursor: pointer;
 }
 
-.slider-toggles .current-btn {
+.slider-toggles .slider-toggle-current {
   background-color: var(--basic-red);
 }
 
@@ -870,7 +910,6 @@ background-color: var(--basic-white);
 .popular-products-cards {
   position: relative;
   width: 220px;
-  height: 318px;
   border: 1px solid var(--greylight);
 }
 
@@ -907,32 +946,32 @@ background-color: var(--basic-white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.img-popular-products {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 178px;
-  width: 220px;
-  margin: 0;
-}
-
 .img-product-cards,
 .img-popular-products {
-  position: relative;
   height: 178px;
   width: 218px;
   margin: 0;
+  padding: 0;
 }
 
-
-
-.img-cards {
-  position: absolute;
-  top: 50%;
-  left: 50%;
- /*-webkit-transform: translate(-57%,-50%);*/
-  transform: translate(-54%, -53%);
+.img-product-1 {
+  padding-top: 6px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
+
+.img-product-2 {
+  padding-top: 29px;
+  padding-left: 40px;
+  padding-right: 53px;
+}
+
+.img-product-3 {
+  padding-top: 22px;
+  padding-left: 33px;
+  padding-right: 43px;
+}
+
 
 .section-title {
   font-size: 30px;
@@ -1250,9 +1289,13 @@ width: 478px;
   min-width: 300px;
 }
 
+.container-wrapper {
+  padding: 0;
+}
+
+
 .breadcrumbs {
   position: relative;
-  grid-column: 1 / -1;
   padding: 0;
   margin-bottom: 40px;
   margin-top: 19px;
@@ -1327,7 +1370,6 @@ width: 478px;
 }
 
 .product-title {
-  grid-column: 1 / -1;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -1364,10 +1406,10 @@ width: 478px;
 
 /*Фильтр*/
 .filter-title {
-  display: inline-block;
   width: 220px;
   font-family: var(--font-pt-sans);
   font-size: 13px;
+  font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
@@ -1477,10 +1519,16 @@ width: 478px;
   margin-right: 8px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
 }
 
 .old-price-container {
@@ -1905,6 +1953,7 @@ position: relative;
 .catalog-info-container {
   padding: 0;
 }
+
 .catalog-info-title {
   font-size: 30px;
   font-style: normal;
@@ -2116,6 +2165,11 @@ position: relative;
   margin-top: 27px;
   margin-bottom: 54px;
 }
+
+
+.footer-tel-link {
+  color: var(--special-extra-greylight);
+}
 .copyright {
   color: var(--basic-white);
   margin: 0;
@@ -2159,6 +2213,7 @@ position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 
 .modal-show {

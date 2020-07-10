@@ -1,4 +1,4 @@
-var btnbuyLink = document.querySelector(".product-list-catalog-grid");
+var btnbuyLink = document.querySelector(".product-list-grid");
 var buyLink = document.querySelector(".btn-buy");
 var basketPopup = document.querySelector(".popup-basket");
 var basketClose = basketPopup.querySelector(".close-popup-basket");

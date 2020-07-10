@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Каталог Техномарта</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -19,11 +19,10 @@
               <input class="search-input" name="search" inputmode="search" type="text" placeholder="Поиск:">
               <button class="btn-search" type="submit">
                 <span class="visually-hidden">Поиск</span>
-                <span>
                   <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
                   </svg>
-                </span>
+
               </button>
             </form>
           </div>
@@ -82,7 +81,7 @@
     </header>
 
     <main>
-      <div class="page-catalog container">
+      <div class="container-wrapper container">
         <h1 class="visually-hidden">Каталог интернет-магазина "Техномарт"</h1>
         <div class="breadcrumbs">
           <a class="breadcrumbs-links" href="index.html"><span class="visually-hidden">Главная</span></a>
@@ -91,9 +90,9 @@
           <a class="breadcrumbs-links">Перфораторы</a>
         </div>
         <h2 class="product-title">Перфораторы</h2>
-
+       <div class="page-catalog">
         <section>
-          <span class="filter-title">Фильтр:</span>
+          <h3 class="filter-title">Фильтр:</h3>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
               <legend class="range-filter-title">Цена:</legend>
@@ -202,8 +201,8 @@
           <ul class="product-list-catalog-grid">
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                <p class="img-product-cards img-product-3">
+                  <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="product-name-title">Перфоратор BOSCH BFG 6000</h3>
                 <p class="old-price-container">
@@ -218,8 +217,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                <p class="img-product-cards img-product-3">
+                  <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="product-name-title">Перфоратор BOSCH BFG 6000</h3>
                 <p class="old-price-container">
@@ -234,8 +233,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                <p class="img-product-cards img-product-3">
+                  <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                   <span class="new"><span class="visually-hidden">Новинка</span></span>
                 </p>
                 <h3 class="product-name-title">Перфоратор BOSCH BFG 6000</h3>
@@ -251,8 +250,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                <p class="img-product-cards img-product-2">
+                  <img src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                   <span class="new"><span class="visually-hidden">Новинка</span></span>
                 </p>
                 <h3 class="product-name-title">Перфоратор BOSCH BFG 3000</h3>
@@ -268,8 +267,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                <p class="img-product-cards img-product-3">
+                  <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="product-name-title">Перфоратор BOSCH BFG 6000</h3>
                 <p class="old-price-container">
@@ -284,8 +283,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                <p class="img-product-cards img-product-2">
+                  <img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                   <span class="new"><span class="visually-hidden">Новинка</span></span>
                 </p>
                 <h3 class="product-name-title special-product-title">Перфоратор BOSCH BFG 2000</h3>
@@ -298,8 +297,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                <p class="img-product-cards img-product-2">
+                  <img src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                   <span class="new"><span class="visually-hidden">Новинка</span></span>
                 </p>
                 <h3 class="product-name-title">Перфоратор BOSCH BFG 3000</h3>
@@ -315,8 +314,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                <p class="img-product-cards img-product-3">
+                  <img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="product-name-title">Перфоратор BOSCH BFG 6000</h3>
                 <p class="old-price-container">
@@ -331,8 +330,8 @@
             </li>
             <li>
               <article class="product-cards">
-                <p class="img-product-cards">
-                  <img class="img-cards" src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                <p class="img-product-cards img-product-2">
+                  <img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                   <span class="new"><span class="visually-hidden">Новинка</span></span>
                 </p>
                 <h3 class="product-name-title special-product-title">Перфоратор BOSCH BFG 2000</h3>
@@ -351,8 +350,9 @@
             <a class="pagination-link" href="">3</a>
             <a class="pagination-link pagination-next-link" href="">Следующая</a>
           </section>
-        </div>
       </section>
+      </div>
+    </div>
 
       <section class="catalog-info">
         <div class="catalog-info-container container">
@@ -375,7 +375,7 @@
             </a>
             <p class="footer-address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-              +7 (812) 555-05-55
+              <a class="footer-tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
           </div>
           <div class="main-footer-navigation">
