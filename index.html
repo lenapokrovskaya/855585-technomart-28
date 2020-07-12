@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -91,15 +91,15 @@
           <article class="slider">
             <ul class="slider-list">
               <li class="slide slide-current">
-                <img class="slide-img" src="img/perforators.jpg" width="620" height="266" alt="Перфораторы">
-                <h2 class="slider-title">Перфораторы</h2>
-                <p class="slider-description">Настоящие мужские игрушки</p>
-                <a class="btn btn-more" href="catalog.html">Открыть каталог</a>
-              </li>
-              <li class="slide">
                 <img class="slide-img" src="img/drills.jpg" width="620" height="266" alt="Дрели">
                 <h2 class="slider-title">Дрели</h2>
                 <p class="slider-description">Соседям на радость!</p>
+                <a class="btn btn-more" href="catalog.html">Открыть каталог</a>
+              </li>
+              <li class="slide">
+                <img class="slide-img" src="img/perforators.jpg" width="620" height="266" alt="Перфораторы">
+                <h2 class="slider-title">Перфораторы</h2>
+                <p class="slider-description">Настоящие мужские игрушки</p>
                 <a class="btn btn-more" href="catalog.html">Открыть каталог</a>
               </li>
             </ul>
@@ -109,7 +109,7 @@
             </div>
             <div class="slider-toggles">
               <button class="slider-toggle" type="button" aria-label="Первый слайд"></button>
-              <button class="slider-toggle current" type="button" aria-label="Второй слайд"></button>
+              <button class="slider-toggle slider-toggle-current" type="button" aria-label="Второй слайд"></button>
             </div>
           </article>
 
@@ -258,40 +258,50 @@
         </section>
       </div>
 
+
+
+
+
+
+
+
       <section class="services-section ">
         <div class="services-section-container container">
           <h2 class="services-title">Сервисы</h2>
           <p class="services-description">
             Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
-          <div class="tab-frame">
-            <input type="radio" checked name="tab" id="tab1">
-            <label class="item1" for="tab1">Доставка</label>
+          <div class="slider-services">
 
-            <input type="radio" name="tab" id="tab2">
-            <label class="item2" for="tab2">Гарантия</label>
 
-            <input type="radio" name="tab" id="tab3">
-            <label class="item3" for="tab3">Кредит</label>
+          <div class="slider-services-controls">
+            <button class="btn-item-services btn-services-1 btn-item-current" type="button">Доставка</button>
 
-            <div class="tab delivery">
-              <span class="service-title title-delivery">Доставка</span>
-              <p class="services-description-delivery">
-                Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-              </p>
-            </div>
-            <div class="tab guarantee">
-              <span class="service-title title-guarantee">Гарантия</span>
-                <p class="services-description-guarantee">
-                  Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-                </p>
-                <p class="services-description-guarantee">
-                  Дом уж восстановите как-нибудь сами.
-                </p>
-            </div>
-            <div class="tab credit">
+            <button class="btn-item-services btn-services-2" type="button">Гарантия</button>
+
+            <button class="btn-item-services btn-services-3" type="button">Кредит</button>
+          </div>
+
+          <div class="slider-service">
+            <ul class="slider-service-list">
+              <li class="slide-services delivery slide-services-current" data-index="0">
+                  <span class="service-title title-delivery">Доставка</span>
+                  <p class="services-description-delivery">
+                    Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно!
+                    Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                  </p>
+              </li>
+              <li class="slide-services guarantee" data-index="1">
+                  <span class="service-title title-guarantee">Гарантия</span>
+                    <p class="services-description-guarantee">
+                    Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                  </p>
+                  <p class="services-description-guarantee">
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+              </li>
+              <li class="slide-services credit" data-index="2">
               <span class="service-title title-credit">Кредит</span>
                 <p class="services-description-credit">
                   Залезть в долговую яму стало проще!
@@ -300,10 +310,16 @@
                   Кредитные консультанты придут вам на помощь.
                 </p>
                  <a class="btn btn-submit-request" href="">Отправить заявку</a>
-            </div>
+
+            <li>
+          </div>
           </div>
         </div>
       </section>
+
+  <script src="js/slider-services.js"></script>
+
+
 
       <div class="info-section container">
         <section class="info-column-company">
