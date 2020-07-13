@@ -1,16 +1,16 @@
 //Basket-catalog
 
- var btnbuyLink = document.querySelector(".product-list-catalog-grid");
- var buyLink = document.querySelector(".btn-buy");
- var basketPopup = document.querySelector(".popup-basket");
- var basketClose = basketPopup.querySelector(".close-popup-basket");
+var btnbuyLink = document.querySelector(".product-list-catalog-grid");
+var buyLink = document.querySelector(".btn-buy");
+var basketPopup = document.querySelector(".popup-basket");
+var basketClose = basketPopup.querySelector(".close-popup-basket");
 
- btnbuyLink.addEventListener("click", function (evt) {
-   evt.preventDefault();
-   if (evt.target.classList.value.includes("btn-buy")) {
-   basketPopup.classList.add("modal-show");
-   }
- });
+  btnbuyLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (evt.target.classList.value.includes("btn-buy")) {
+    basketPopup.classList.add("modal-show");
+    }
+  });
 
 
   basketClose.addEventListener("click", function (evt) {

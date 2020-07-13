@@ -269,7 +269,7 @@ img {
 .basket-link:focus,
 .basket-link:active {
   background-color: var(--special-dark-blue);
-  color: var(---srecial-transparent-white);
+  color: var(--srecial-transparent-white);
   opacity: 0.3;
 }
 
@@ -893,7 +893,7 @@ background-color: var(--basic-white);
   margin-top: 38px;
   margin-left: 41px;
   border-radius: 2px;
-  box-shadow: inset 0px -3px 0px var(special-black-shadow);
+  box-shadow: inset 0px -3px 0px var(--special-black-shadow);
 }
 
 .btn-buy:hover {
@@ -1090,9 +1090,10 @@ background-color: var(--basic-white);
 }
 
 .slider-services-controls {
-display: flex;
-flex-direction: column;
-position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 3px;
 }
 
 .slider-services-controls::after {
@@ -1169,13 +1170,13 @@ position: relative;
 .guarantee-img {
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
-  background-position: 108% 28%;
+  background-position: 104% 80%;
 }
 
 .credit-img {
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
-  background-position: 111% 28%;
+  background-position: 107% 28%;
 }
 
 .title-delivery {
@@ -1231,10 +1232,11 @@ position: relative;
 }
 
 .info-section {
- display: flex;
- justify-content: space-between;
- margin-bottom: 70px;
- padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .info-column-company {
@@ -1252,7 +1254,7 @@ width: 478px;
 }
 
 .info-column-contacts img {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .info-section-description {
@@ -1263,7 +1265,7 @@ width: 478px;
 }
 
 .info-section-paragraph {
-  margin-top: 27px;
+  margin-top: 25px;
 }
 
 .info-section-title {
@@ -1273,7 +1275,6 @@ width: 478px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 24px;
-  margin-top: 70px;
 }
 
 .info-section-list {
@@ -1282,7 +1283,7 @@ width: 478px;
   list-style: none;
   margin: 0;
   margin-top: 3px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -1630,16 +1631,6 @@ input[type=number] {
   margin-bottom: 20px;
 }
 
-.radio-filter-title {
-  font-family: var(--font-pt-sans);
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding: 0;
-  margin-bottom: 23px;
-}
-
 .checkbox-filter-title:before {
   display: block;
   content: "";
@@ -1651,8 +1642,19 @@ input[type=number] {
   margin-bottom: 16px;
 }
 
+.radio-filter-title {
+  font-family: var(--font-pt-sans);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 23px;
+}
+
 .radio-filter-title:before {
   display: block;
+  content: "";
   width: 220px;
   height: 1px;
   background-color: var(--basic-black);
@@ -2155,7 +2157,7 @@ input[type=number] {
 
 .map-img {
   border: none;
-
+  border-top: 7px solid var(--basic-red);
 }
 
 .img-map {
@@ -2168,18 +2170,7 @@ input[type=number] {
   min-height: 449px;
   margin: 0;
   padding: 0;
-}
-
-.popup-map-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 943px;
-  height: 7px;
-  background: url("../img/border-map.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  box-shadow: 0px 4px 20px var(--special-black-shadow);
 }
 
 .close-item {
@@ -2213,24 +2204,14 @@ input[type=number] {
   width: 620px;
   min-height: 430px;
   background-color: var(--basic-white);
+  box-shadow: 0px 4px 20px var(--special-black-shadow);
+  border-top: 7px solid var(--basic-red);
 }
 
 .modal-form-wrapper {
   width: 620px;
   min-height: 430px;
   position: relative;
-}
-
-.modal-form-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 620px;
-  height: 7px;
-  background: url("../img/border-map.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .close-item-modal {
@@ -2261,19 +2242,19 @@ input[type=number] {
   font-size: 18px;
   margin: 0;
   margin-left: 20px;
-  margin-top: 46px;
+  margin-top: 39px;
 }
 
 .modal-item-name {
   font-size: 18px;
   margin: 0;
-  margin-top: 46px;
+  margin-top: 39px;
 }
 
 .modal-item-text {
   font-size: 18px;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .modal-item-text textarea {
@@ -2313,9 +2294,28 @@ input[type=number] {
 
 .btn-area {
   width: 620px;
+  display: flex;
+  justify-content: space-between;
   min-height: 112px;
   margin: 0;
   padding: 0;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 114px;
+  padding-right: 112px;
+  text-align: center;
+  background-color: var(--special-neutral);
+}
+
+.btn-area-form {
+  width: 620px;
+  min-height: 112px;
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 80px;
+  padding-right: 80px;
   text-align: center;
   background-color: var(--special-neutral);
 }
@@ -2326,7 +2326,6 @@ input[type=number] {
   font-family: var(--font-cuprum);
   border: none;
   outline: inherit;
-  margin-top: 37px;
 }
 .popup-basket-wrapper {
   display: flex;
@@ -2336,18 +2335,8 @@ input[type=number] {
   min-height: 282px;
   position: relative;
   background-color: var(--basic-white);
-}
-
-.popup-basket-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 620px;
-  height: 7px;
-  background: url("../img/border-map.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border-top: 7px solid var(--basic-red);
+  box-shadow: 0px 4px 20px var(--special-black-shadow);
 }
 
 .close-popup-basket {
@@ -2363,10 +2352,11 @@ input[type=number] {
   font-size: 24px;
   line-height: 30px;
   margin: 0;
-  margin-top: 73px;
+  margin-top: 66px;
   margin-left: 175px;
   margin-bottom: 67px;
 }
+
 .popup-basket-wrapper::after {
   content: "";
   position: absolute;
@@ -2382,16 +2372,12 @@ input[type=number] {
 
 .btn-order {
   width: 192px;
-  margin-top: 37px;
-  margin-left: 114px;
 }
 
 .btn-continue{
   width: 192px;
   background-color: var(--basic-white);
   color: var(--basic-black);
-  margin-top: 37px;
-  margin-right: 112px;
 }
 
 /* Animations */
