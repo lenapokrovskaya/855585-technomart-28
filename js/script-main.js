@@ -82,13 +82,13 @@ var servicesControls = document.querySelectorAll(".btn-item-services");
 servicesControls.forEach((control, index) => {
   control.addEventListener("click", function () {
     servicesControls.forEach((control) => {
-      control.classList.remove(".btn-item-current");
+      control.classList.remove("btn-item-current");
     });
     servicesSlides.forEach((slide) => {
-      slide.classList.remove(".slide-services-current");
+      slide.classList.remove("slide-services-current");
     });
-    control.classList.add(".btn-item-current");
-    servicesSlides[index].classList.add(".slide-services-current");
+    control.classList.add("btn-item-current");
+    servicesSlides[index].classList.add("slide-services-current");
   })
 });
 
