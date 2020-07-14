@@ -19,15 +19,15 @@ function currentSlide(n) {
   showSlides(slideIndex);
 }
 
-nextSlideBtn.addEventListener('click', function () {
+nextSlideBtn.addEventListener("click", function () {
   plusSlide(1);
 });
-prevSlideBtn.addEventListener('click', function () {
+prevSlideBtn.addEventListener("click", function () {
   plusSlide(-1);
 });
 
 for (let i = 0; i < dots.length; i++) {
-  dots[i].addEventListener('click', function () {
+  dots[i].addEventListener("click", function () {
     currentSlide(i+1);
   });
 }
@@ -37,12 +37,12 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
 
   for (var j = 0; j < slides.length; j++) {
-    slides[j].classList.remove('slide-current');
-    dots[j].classList.remove('slider-toggle-current');
+    slides[j].classList.remove("slide-current");
+    dots[j].classList.remove("slider-toggle-current");
   }
 
-  dots[slideIndex-1].classList.add('slider-toggle-current');
-  slides[slideIndex-1].classList.add('slide-current');
+  dots[slideIndex-1].classList.add("slider-toggle-current");
+  slides[slideIndex-1].classList.add("slide-current");
 }
 
 //Basket-main
