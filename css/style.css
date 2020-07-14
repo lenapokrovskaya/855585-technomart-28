@@ -945,7 +945,8 @@ background-color: var(--basic-white);
   background-color: var(--special-green);
 }
 
-.btn-buy:active {
+.btn-buy:active,
+.btn-buy:focus {
  background-color: var(--special-dark-green);
 }
 
@@ -961,11 +962,12 @@ background-color: var(--basic-white);
   border-radius: 2px;
 }
 
-.btn-in-bookmarks:hover{
+.btn-in-bookmarks:hover {
   border: 3px solid var(--basic-grey);
 }
 
-.btn-in-bookmarks:active{
+.btn-in-bookmarks:active,
+.btn-in-bookmarks:focus {
   border: 3px solid var(--basic-grey);
   color: var(--basic-grey);
   opacity: 0.5;
@@ -1183,7 +1185,8 @@ background-color: var(--basic-white);
   color: var(--basic-white);
 }
 
-.btn-item-services:active {
+.btn-item-services:active,
+.btn-item-services:focus {
   background-color: var(--basic-white);
   color: var(--basic-grey);
   border: none;
@@ -1490,6 +1493,7 @@ width: 478px;
 .bar {
   width: 70%;
   height: 2px;
+  margin-left: 10%;
   background-color: var(--special-extra-green);
 }
 
@@ -1509,11 +1513,11 @@ width: 478px;
 }
 
 .toggle-min {
-  left: 18px;
+  left: 8%;
 }
 
 .toggle-max {
-  left: 160px;
+  left: 72%;
 }
 
 .price-controls {
@@ -1616,7 +1620,8 @@ width: 478px;
   opacity: 0.7;
 }
 
-.filter-input-checkbox:hover + label::after {
+.filter-input-checkbox:hover + label::after,
+.filter-input-checkbox:focus + label::after {
   opacity: 1;
 }
 
@@ -1650,7 +1655,8 @@ width: 478px;
   opacity: 0.7;
 }
 
-.filter-input-radio:hover + label::after {
+.filter-input-radio:hover + label::after,
+.filter-input-radio:focus + label::after {
   opacity: 1;
 }
 
@@ -1804,18 +1810,6 @@ width: 478px;
   border: none;
 }
 
-.sorting-link:nth-child(2):hover,
-.sorting-link:nth-child(3):hover {
-  border-bottom: 1px solid var(--basic-red);
-  color: var(--basic-black);
-}
-
-.sorting-link:nth-child(2):active,
-.sorting-link:nth-child(3):active {
-  color: var(--basic-red);
-  border: none;
-}
-
 .price-link-active {
   color: var(--basic-red);
   border: none;
@@ -1832,16 +1826,35 @@ width: 478px;
   height: 11px;
 }
 
-.icon-down-dir:hover path{
+.icon-down-dir:hover path {
   fill: var(--basic-black);
+  vertical-align: middle;
+  border: none;
 }
 
-.icon-down-dir:active path{
+.icon-down-dir:active path {
   fill: var(--basic-red);
+  vertical-align: middle;
 }
 
 .icon-dir-active path {
   fill: var(--basic-red);
+}
+
+.sorting-link-type:hover,
+.sorting-link-function:hover {
+  border-bottom: 1px solid var(--basic-red);
+  color: var(--basic-black);
+}
+
+.sorting-link-type:active,
+.sorting-link-function:active,
+.sorting-link-down:active,
+.sorting-link-type:focus,
+.sorting-link-function:focus,
+.sorting-link-down:focus  {
+  color: var(--basic-red);
+  border: none;
 }
 
 .product-name-title {
