@@ -899,31 +899,36 @@ img {
   border: 1px solid var(--greylight);
 }
 
-.product-cards:hover {
-  box-shadow: 0px 4px 20px var(special-black-shadow);
-}
-.product-cards:hover .cards-action {
-  display: block;
-  visibility: visible;
-}
-
 .cards-action {
 position: absolute;
-display: none;
 top: 0px;
 left: 0px;
 width: 216px;
 height: 178px;
 background-color: var(--basic-white);
+opacity: 0;
+}
+
+.cards-action:focus-within {
+  opacity: 1;
+}
+
+.product-cards:hover {
+  box-shadow: 0px 4px 20px var(special-black-shadow);
+}
+
+.product-cards:hover .cards-action,
+.product-cards:focus .cards-action {
+  opacity: 1;
 }
 
 .popular-products-cards:hover {
   box-shadow: 0px 4px 20px var(special-black-shadow);
 }
 
-.popular-products-cards:hover .cards-action {
-  display: block;
-  visibility: visible;
+.popular-products-cards:hover .cards-action,
+.popular-products-cards:focus .cards-action {
+  opacity: 1;
 }
 
 .btn-buy {
